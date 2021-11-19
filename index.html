@@ -8,98 +8,23 @@
   <title>CityBooks Rental - a CS445 WebApp Project - Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-  <style>
-    /* .guest a button:hover {
-            border-color: white;
 
-        } */
-    a:link {
-      text-decoration: none;
-    }
-
-    a:visited {
-      text-decoration: none;
-    }
-
-
-
-    a:active {
-      text-decoration: underline;
-    }
-
-    .pos {
-      display: grid;
-      grid-template-columns: 38% 20% 25% 15%;
-      background-color: rgb(185, 182, 174);
-      text-decoration: white;
-      max-width: 100%;
-      height: 75px;
-      align-items: center;
-      margin-left: 5px;
-      margin-right: 5px;
-      margin-bottom: 10px;
-    }
-  </style>
 </head>
 
-<body>
-  <div id="header" class="navbar navbar-expand-sm pb-3 pos header ">
-    <div class="col mx-3">
-      <div class="guest" style="background-color:rgb(185, 182, 174);">
+<script>
+  $(function () {
+    $("#header").load("header.html");
 
-        <button type="button" class="btn text-bla  mySign  " style="width: 440px;font-size: 25px; "><a <a
-            href="listBook.html" style="font-style: normal; color: black;"> CityBooks
-            Rental: :
-            :Fairfield
-            Librery</a>
+    $("#footer").load("footer.html");
+  });
+</script>
+</head>
 
-        </button>
-        </a>
-      </div>
-
-    </div>
-    <div class="col mx-3">
-      <div class="guest" style="background-color:rgb(185, 182, 174);">
-        <a href="">
-          <button type="button" class="btn text-bla  mySign  " style="width: 200px;font-size: 25px; ">
-            <a href="index.html" style="font-style: normal; color: black;">Home</a>
-
-          </button>
-        </a>
-      </div>
-
-    </div>
-    <div class="col mx-3">
-      <div class="guest" style="background-color:rgb(185, 182, 174);">
-        <a href="">
-          <button type="button" class="btn text-bla  mySign  " style="width: 200px;font-size: 25px; ">
-            <label class="bord" style="border-left:solid 1px black; height: 50px;">.</label> <label class="cast"
-              style="margin-left: 40px; color: rgb(143, 108, 108); font-size:20px; ">
-              <a href="listBook.html" style="font-style: normal; color: black;">
-                Catalog</a>
-            </label>
-          </button>
-        </a>
-      </div>
-
-    </div>
-    <div class="col mx-3">
-      <div class="guest" style="background-color:rgb(185, 182, 174);">
-        <a href="">
-          <button type="button" class="btn text-bla  mySign  " style="width: 200px;font-size: 20px; ">
-            <a href="index.html" style="font-style: normal; color: black;"> Welcome, Guest</a>
-
-          </button>
-        </a>
-      </div>
-
-    </div>
+<body style="background-color: rgb(214, 233, 228);">
+  <div class="position-sticky top-0" style="z-index: 4;" id="header">
   </div>
 
   <div class="container">
@@ -132,20 +57,13 @@
     </div>
     </p>
     <div>
-      <img src="./images/fairfield.jpg" alt="CityBooks Photo" style="height: 400px;">
+      <img src="images/fairfield.jpg" alt="CityBooks Photo" style="height: 400px;">
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <script>
-    $(function () {
-      // $("#header").load("header.html");
-
-      $("#footer").load("footer.html");
-    });
-  </script>
   <div id="footer" style="margin-top: 20px;"></div>
 </body>
 
